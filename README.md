@@ -24,7 +24,9 @@ Use um emulador ou leia o QRCode do terminal por um dispositivo físico <br>
 ## 📱 Layout & Features
 Neste desafio era preciso criar um app básico do Reddit com React Native, consumindo os posts do `r/pics` (acessível por [esta url](https://api.reddit.com/r/pics/hot.json). Confira abaixo o design da interface principal que contém a listagem das postagens, podendo vizualizar também no Figma através [deste link](https://www.figma.com/file/MaqHiTzqQb4tzMAulso0Ob/Mobile?node-id=0%3A1&t=G7EXYtpK0SMTqqpQ-1)
 
-![demo](https://user-images.githubusercontent.com/69374340/216955021-85ed319f-ab29-41c9-bc4f-3e36df4f3ee5.png)
+| Layout idealizado  | Design Alcançado  |
+|:------------------:|:-----------------:|
+| ![figma](https://user-images.githubusercontent.com/69374340/216955021-85ed319f-ab29-41c9-bc4f-3e36df4f3ee5.png) | ![demo](./demo) |
 
 
 ### Requisitos
