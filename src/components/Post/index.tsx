@@ -19,6 +19,12 @@ export function Post({
   comments,
   postedAt,
 }: PostProps) {
+  function formatNumber(value: number) {
+    if (value >= 10000) return `${Math.ceil(value / 10000)}M`;
+    if (value >= 1000) return `${Math.ceil(value / 1000)}k`;
+    return value;
+  }
+
   return (
     <Container>
       <Image source={{ uri: imageSource }} />
@@ -27,8 +33,8 @@ export function Post({
         <Title>{title}</Title>
         <InfoContainer>
           <Info>{author}</Info>
-          <Info>{votes} votes</Info>
-          <Info>{comments} comments</Info>
+          <Info>{formatNumber(votes)} votes</Info>
+          <Info>{formatNumber(comments)} comments</Info>
         </InfoContainer>
       </Content>
     </Container>

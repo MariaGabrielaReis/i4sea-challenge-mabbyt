@@ -45,7 +45,6 @@ export function CategoryProvider({ children }: CategoryProviderProps) {
 
   useEffect(() => {
     api.get(`/${category.toString().toLowerCase()}.json`).then(response => {
-      console.log("dadosss: ", response.data.data.children[0].data.author);
       const posts: PostProps[] = [];
       response.data.data.children.map((post: any) => {
         posts.push({
@@ -59,7 +58,6 @@ export function CategoryProvider({ children }: CategoryProviderProps) {
           postedAt: post.data.created,
         });
       });
-
       setPosts(posts);
     });
   }, [category]);

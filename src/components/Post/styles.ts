@@ -17,9 +17,6 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.COLORS.WHITE};
   width: 200px;
   height: 40px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 `;
 
 export const InfoContainer = styled.View`
@@ -33,6 +30,8 @@ export const Info = styled.Text`
   font-size: ${({ theme }) => theme.FONT_SIZE.SM}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
   color: ${({ theme }) => theme.COLORS.GRAY};
+  width: 64px;
+  height: 20px;
 `;
 
 export const PostedAt = styled.Text`
