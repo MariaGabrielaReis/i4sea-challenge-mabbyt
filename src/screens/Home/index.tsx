@@ -12,18 +12,6 @@ export function Home() {
     <SafeAreaView style={{ backgroundColor: theme.COLORS.BLACK, flex: 1 }}>
       <Header />
       <Navbar />
-      <Post
-        id={"111"}
-        title={
-          "título título título título título título título títulotítulo título título título título"
-        }
-        author={"author"}
-        votes={3}
-        comments={0}
-        postedAt={"11 agosto"}
-        url={""}
-        imageSource={""}
-      />
 
       <FlatList
         data={posts}

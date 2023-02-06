@@ -45,7 +45,22 @@ export function CategoryProvider({ children }: CategoryProviderProps) {
 
   useEffect(() => {
     api.get(`/${category.toString().toLowerCase()}.json`).then(response => {
-      console.log("dadosss: ", response.data.children[0].data.name);
+      console.log("dadosss: ", response.data.data.children[0].data.author);
+      const posts: PostProps[] = [];
+      response.data.data.children.map((post: any) => {
+        posts.push({
+          id: post.data.id,
+          url: post.data.permalink,
+          imageSource: post.data.url,
+          title: post.data.title,
+          author: post.data.author,
+          votes: post.data.ups,
+          comments: post.data.num_comments,
+          postedAt: post.data.created,
+        });
+      });
+
+      setPosts(posts);
     });
   }, [category]);
 
