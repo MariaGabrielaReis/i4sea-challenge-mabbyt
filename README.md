@@ -26,7 +26,7 @@ Neste desafio era preciso criar um app básico do Reddit com React Native, consu
 
 | Layout idealizado  | Design Alcançado  |
 |:------------------:|:-----------------:|
-| ![figma](https://user-images.githubusercontent.com/69374340/216955021-85ed319f-ab29-41c9-bc4f-3e36df4f3ee5.png) | ![demo](./demo) |
+| ![figma](https://user-images.githubusercontent.com/69374340/216955021-85ed319f-ab29-41c9-bc4f-3e36df4f3ee5.png) | <img src="./demo.gif" width='250px' />|
 
 
 ### Requisitos
