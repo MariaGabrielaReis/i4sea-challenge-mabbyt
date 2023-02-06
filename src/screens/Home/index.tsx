@@ -1,16 +1,27 @@
 import React from "react";
-import { SafeAreaView, FlatList } from "react-native";
+import { SafeAreaView, FlatList, Text } from "react-native";
 
 import { Header, Navbar, Post } from "../../components";
 import { useCategoryContext } from "../../context/CategoryContext";
+import theme from "../../theme";
 
 export function Home() {
   const { posts } = useCategoryContext();
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: theme.COLORS.BLACK, flex: 1 }}>
       <Header />
       <Navbar />
+      <Post
+        id={"111"}
+        title={"título"}
+        author={"author"}
+        votes={3}
+        comments={0}
+        postedAt={"11 agosto"}
+        url={""}
+        imageSource={""}
+      />
 
       <FlatList
         data={posts}

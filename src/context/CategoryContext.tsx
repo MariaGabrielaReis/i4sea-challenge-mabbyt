@@ -45,7 +45,7 @@ export function CategoryProvider({ children }: CategoryProviderProps) {
 
   useEffect(() => {
     api.get(`/${category.toString().toLowerCase()}.json`).then(response => {
-      console.log(response.data);
+      console.log("dadosss: ", response.data.children[0].data.name);
     });
   }, [category]);
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { StatusBar } from "react-native";
 import {
   useFonts,
@@ -9,6 +10,7 @@ import theme from "./src/theme";
 
 import { Loading } from "./src/components/Loading";
 import { Home } from "./src/screens/Home";
+import { CategoryProvider } from "./src/context/CategoryContext";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,7 +27,9 @@ export default function App() {
         backgroundColor={"transparent"}
         translucent
       />
-      <Home />
+      <CategoryProvider>
+        <Home />
+      </CategoryProvider>
     </ThemeProvider>
   );
 }

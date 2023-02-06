@@ -13,7 +13,7 @@ export const Content = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: ${({ theme }) => theme.FONT_SIZE.MD};
+  font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
   color: ${({ theme }) => theme.COLORS.WHITE};
 `;
@@ -26,13 +26,13 @@ export const InfoContainer = styled.View`
 `;
 
 export const Info = styled.Text`
-  font-size: ${({ theme }) => theme.FONT_SIZE.SM};
+  font-size: ${({ theme }) => theme.FONT_SIZE.SM}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
   color: ${({ theme }) => theme.COLORS.GRAY};
 `;
 
 export const PostedAt = styled.Text`
-  font-size: ${({ theme }) => theme.FONT_SIZE.XS};
+  font-size: ${({ theme }) => theme.FONT_SIZE.XS}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
   color: ${({ theme }) => theme.COLORS.GRAY};
 `;
