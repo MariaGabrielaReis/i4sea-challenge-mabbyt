@@ -14,7 +14,9 @@ export function Home() {
       <Navbar />
       <Post
         id={"111"}
-        title={"título"}
+        title={
+          "título título título título título título título títulotítulo título título título título"
+        }
         author={"author"}
         votes={3}
         comments={0}
